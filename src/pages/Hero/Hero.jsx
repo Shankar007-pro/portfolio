@@ -44,7 +44,7 @@ export default function Hero() {
   const words = [
      "AI & Machine Learning Enthusiast",
     "PROBLEM SOLVER | CREATIVE THINKER",
-    "Learning MARN Stack",
+    "Data Analyst",
   ];
 
   const [code] = useState(`
@@ -52,7 +52,7 @@ const profile = {
     name: 'MR.SHANKAR',
     title: 'AI & ML Specialist | Data Analyst | Problem Solver',
     skills: [
-    'Excel', 'Python', 'Power Bi', 'EDA' ,'Data Visualization',
+    'Excel', 'Python', 'Power Bi', 'EDA' ,'Data Visualization','Tableau',
 ],
 
     hardWorker: true,
@@ -229,9 +229,10 @@ const profile = {
                 </a>
 
                 {/* Contact Button */}
-                <a
-                  href="https://drive.google.com/file/d/1BDsnIHsnmtl9aEpsHh9h0l5OgZ9jD16r/view?usp=sharing"
+                 <a
+                  href="/resume.pdf"  // 👈 NEW LOCAL LINK (Make sure your file is named resume.pdf inside the public folder)
                   target="_blank"
+                  rel="noopener noreferrer" // Good practice for security
                   className="group relative inline-flex items-center justify-center gap-3 p-0.5 rounded-xl bg-gradient-to-r from-gray-800 to-gray-700 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
                 >
                   <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 border border-gray-700/50 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-gray-800 group-hover:to-gray-700">
