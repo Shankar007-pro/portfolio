@@ -10,7 +10,7 @@ const educationData = [
     year: "2023-2027",
     achievements: [
       "CGPA: 7.71",
-      "HCL GUVI HACKTHON PARTICIPANT",
+      "HCL GUVI HACKTHON Top Performer",
     ],
     skills: ["EXCEL", "PYTHON", "SQL", "AI & ML"],
     description:
