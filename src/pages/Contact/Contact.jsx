@@ -60,7 +60,7 @@ export default function Contact() {
     }
 
     const form = new FormData();
-    form.append("access_key", "4a059e1c-e775-4e79-a769-59c338b21b38");
+    form.append("access_key", "d2273fb9-f85b-48af-a89d-defa9d60f770");
     form.append("name", formData.name);
     form.append("email", formData.email);
     form.append("subject", formData.subject || "New Contact Form Submission");

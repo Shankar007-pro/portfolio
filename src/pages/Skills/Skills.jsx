@@ -3,6 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import IconCloudDemo from "@/components/globe";
 import { Code2, Paintbrush, Database, Layout, Cpu, Cloud } from "lucide-react";
+
+// Importing all necessary icons from react-icons
 import { 
   FaBrain, 
   FaHeadphones, 
@@ -18,10 +20,32 @@ import {
   FaNodeJs,
   FaLinux,
   FaAws,
-  FaFileExcel // ✅ Added this safe icon for Excel
+  FaFileExcel,
+  FaHtml5,       // Added for HTML
+  FaCss3Alt,     // Added for CSS
+  FaJs,          // Added for JavaScript
+  FaChartLine,   // Added for Matplotlib
+  FaChartArea,   // Added for Seaborn
+  FaCubes,       // Added for OOPs
+  FaNetworkWired,// Added for Networks
+  FaDatabase,    // Added for DBMS
+  FaFire,        // Added for Motivation
+  FaUsers,       // Added for Teamwork
+  FaSync,        // Added for Adaptability
+  FaClock,       // Added for Time Management
+  FaFlag,        // Added for Leadership
+  FaBullseye,    
+  FaLightbulb,   
+  FaSearch,      
+  FaLaptopCode,  
+  FaGamepad,     
+  FaPuzzlePiece,
+  FaProjectDiagram // Added for DSA
 } from "react-icons/fa";
+
 import { MdLiveTv, MdSportsTennis, MdAnimation } from "react-icons/md";
-import { GiChessKnight } from "react-icons/gi";
+import { GiChessKnight, GiArtificialIntelligence } from "react-icons/gi";
+
 import {
   SiNextdotjs,
   SiTypescript,
@@ -36,12 +60,12 @@ import {
   SiVercel,
   SiVite,
   SiMysql,
-  // SiMicrosoftexcel, ❌ Removed to fix build error
   SiPandas,         
   SiNumpy,          
   SiJupyter,        
   SiScikitlearn,    
 } from "react-icons/si";
+
 import { TbBrandVscode } from "react-icons/tb";
 import { BsFileEarmarkCode, BsGrid1X2 } from "react-icons/bs";
 import { FcWorkflow } from "react-icons/fc";
@@ -86,9 +110,9 @@ const SkillsSection = () => {
         { name: "Python", icon: <FaPython className="w-4 h-4 text-[#3776AB]" /> },
         { name: "SQL", icon: <SiMysql className="w-4 h-4 text-[#00758F]" /> },
         { name: "Java", icon: <FaJava className="w-4 h-4 text-[#007396]" /> },
-        { name: "HTML", icon: <BsFileEarmarkCode className="w-4 h-4 text-[#E34F26]" /> },
-        { name: "CSS", icon: <BsFileEarmarkCode className="w-4 h-4 text-[#1572B6]" /> },
-        { name: "JavaScript", icon: <BsFileEarmarkCode className="w-4 h-4 text-[#F7DF1E]" /> },
+        { name: "HTML", icon: <FaHtml5 className="w-4 h-4 text-[#E34F26]" /> }, // Fixed
+        { name: "CSS", icon: <FaCss3Alt className="w-4 h-4 text-[#1572B6]" /> }, // Fixed
+        { name: "JavaScript", icon: <FaJs className="w-4 h-4 text-[#F7DF1E]" /> }, // Fixed
       ],
     },
     {
@@ -98,7 +122,7 @@ const SkillsSection = () => {
       skills: [
         { name: "GitHub", icon: <FaGitAlt className="w-4 h-4 text-[#F05032]" /> },
         { name: "VS Code", icon: <TbBrandVscode className="w-4 h-4 text-[#007ACC]" /> },
-        { name: "Excel", icon: <FaFileExcel className="w-4 h-4 text-[#217346]" /> }, // ✅ Fixed Icon
+        { name: "Excel", icon: <FaFileExcel className="w-4 h-4 text-[#217346]" /> },
         { name: "Jupyter Notebook", icon: <SiJupyter className="w-4 h-4 text-[#F37626]" /> },
       ],
     },
@@ -108,12 +132,12 @@ const SkillsSection = () => {
       color: "text-purple-400",
       skills: [
         { name: "Artificial Intelligence", icon: <FaBrain className="w-4 h-4 text-purple-500" /> },
-        { name: "Generative AI", icon: <FaBrain className="w-4 h-4 text-pink-500" /> }, 
+        { name: "Generative AI", icon: <GiArtificialIntelligence className="w-4 h-4 text-pink-500" /> }, 
         { name: "Machine Learning", icon: <SiScikitlearn className="w-4 h-4 text-orange-500" /> },
         { name: "Pandas", icon: <SiPandas className="w-4 h-4 text-[#150458]" /> },
         { name: "Numpy", icon: <SiNumpy className="w-4 h-4 text-[#013243]" /> },
-        { name: "Matplotlib", icon: <BsGrid1X2 className="w-4 h-4 text-[#11557c]" /> }, 
-        { name: "Seaborn", icon: <BsGrid1X2 className="w-4 h-4 text-[#11557c]" /> },
+        { name: "Matplotlib", icon: <FaChartLine className="w-4 h-4 text-[#11557c]" /> }, // Fixed
+        { name: "Seaborn", icon: <FaChartArea className="w-4 h-4 text-[#11557c]" /> },   // Fixed
       ],
     },
     {
@@ -121,10 +145,10 @@ const SkillsSection = () => {
       title: "Core Subjects",
       color: "text-yellow-400",
       skills: [
-        { name: "DSA", icon: <Cpu className="w-4 h-4 text-[#7C4DFF]" /> },
-        { name: "OOPs", icon: <BsGrid1X2 className="w-4 h-4 text-blue-400" /> },
-        { name: "DBMS", icon: <Database className="w-4 h-4 text-green-400" /> },
-        { name: "Computer Networks", icon: <Cloud className="w-4 h-4 text-orange-400" /> },
+        { name: "DSA", icon: <FaProjectDiagram className="w-4 h-4 text-[#7C4DFF]" /> }, // Fixed
+        { name: "OOPs", icon: <FaCubes className="w-4 h-4 text-blue-400" /> }, // Fixed
+        { name: "DBMS", icon: <FaDatabase className="w-4 h-4 text-green-400" /> }, // Fixed
+        { name: "Computer Networks", icon: <FaNetworkWired className="w-4 h-4 text-orange-400" /> }, // Fixed
         { name: "Operating Systems", icon: <FaLinux className="w-4 h-4 text-[#FCC624]" /> },
       ],
     },
@@ -133,13 +157,13 @@ const SkillsSection = () => {
       title: "Interpersonal Skills",
       color: "text-pink-400",
       skills: [
-        { name: "Self Motivation", icon: <BsGrid1X2 className="w-4 h-4 text-blue-400" /> },
-        { name: "Teamwork", icon: <FcWorkflow className="w-4 h-4" /> },
-        { name: "Problem Solving", icon: <Cpu className="w-4 h-4 text-purple-400" /> },
-        { name: "Adaptability", icon: <SiRedux className="w-4 h-4 text-pink-400" /> },
-        { name: "Time Management", icon: <SiJest className="w-4 h-4 text-yellow-400" /> },
-        { name: "Critical Thinking", icon: <SiTypescript className="w-4 h-4 text-blue-500" /> },
-        { name: "Leadership", icon: <FaAws className="w-4 h-4 text-orange-400" /> },
+        { name: "Self Motivation", icon: <FaFire className="w-4 h-4 text-orange-500" /> }, // Fixed
+        { name: "Teamwork", icon: <FaUsers className="w-4 h-4 text-blue-400" /> }, // Fixed
+        { name: "Problem Solving", icon: <FaLightbulb className="w-4 h-4 text-yellow-400" /> }, // Fixed
+        { name: "Adaptability", icon: <FaSync className="w-4 h-4 text-green-400" /> }, // Fixed
+        { name: "Time Management", icon: <FaClock className="w-4 h-4 text-purple-400" /> }, // Fixed
+        { name: "Critical Thinking", icon: <FaBrain className="w-4 h-4 text-pink-500" /> }, // Fixed
+        { name: "Leadership", icon: <FaFlag className="w-4 h-4 text-red-500" /> }, // Fixed
       ],
     },
     {
@@ -147,17 +171,17 @@ const SkillsSection = () => {
       title: "Hobbies & Interests",
       color: "text-indigo-400",
       skills: [
-        { name: "Focus & Patience", icon: <FaReact className="w-4 h-4 text-cyan-400" /> },
-        { name: "Problem Solving", icon: <Cpu className="w-4 h-4 text-yellow-400" /> },
+        { name: "Focus & Patience", icon: <FaBullseye className="w-4 h-4 text-cyan-400" /> },
+        { name: "Problem Solving", icon: <FaPuzzlePiece className="w-4 h-4 text-yellow-400" /> },
         { name: "Listening to Music", icon: <FaHeadphones className="w-4 h-4 text-pink-300" /> },
-        { name: "Exploring New Tech/Tools", icon: <FaWrench className="w-4 h-4 text-blue-300" /> },
+        { name: "Exploring New Tech", icon: <FaSearch className="w-4 h-4 text-blue-300" /> },
         { name: "Watching Web Series", icon: <MdLiveTv className="w-4 h-4 text-red-300" /> },
-        { name: "Hackathons & Tech Fests", icon: <SiFirebase className="w-4 h-4 text-orange-400" /> },
-        { name: "Helping Others Learn", icon: <FaHandsHelping className="w-4 h-4 text-indigo-300" /> },
-        { name: "Carrom", icon: <GiChessKnight className="w-4 h-4 text-gray-300" /> },
+        { name: "Hackathons", icon: <FaLaptopCode className="w-4 h-4 text-orange-400" /> },
+        { name: "Helping Others", icon: <FaHandsHelping className="w-4 h-4 text-indigo-300" /> },
+        { name: "Carrom", icon: <FaGamepad className="w-4 h-4 text-gray-300" /> },
         { name: "Badminton", icon: <MdSportsTennis className="w-4 h-4 text-lime-400" /> },
         { name: "Traveling", icon: <FaPlane className="w-4 h-4 text-teal-400" /> },
-        { name: "Logic Puzzles", icon: <FaPenNib className="w-4 h-4 text-amber-400" /> },
+        { name: "Logic Puzzles", icon: <FaPuzzlePiece className="w-4 h-4 text-amber-400" /> },
         { name: "Photography", icon: <FaCameraRetro className="w-4 h-4 text-rose-400" /> },
       ],
     },

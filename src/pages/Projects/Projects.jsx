@@ -11,7 +11,7 @@ const projects = [
     img: project1Img,
     color: "#38b718ff",
     github: "https://github.com/Shankar007-pro/Deliquency-Prediction",
-    live: "https://gear-up-alpha.vercel.app/",
+    live: "",
   },
   {
     title: "Gen AI Health Assistant",
@@ -19,7 +19,7 @@ const projects = [
     img: project2Img,
     color: "#d4cbd4ff",
     github: "https://github.com/Shankar007-pro/genai-health-assistant",
-    live: "https://vote-fuji-flow.netlify.app/",
+    live: "",
   },
   
 
