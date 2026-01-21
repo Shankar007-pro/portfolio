@@ -108,7 +108,7 @@ export default function Contact() {
                   {
                     icon: <Mail className="w-6 h-6 text-purple-400" />,
                     title: "Email",
-                    content: "shankar.techie@gmail.com",
+                    content: "mopurshankareddy@gmail.com",
                   },
                   {
                     icon: <Phone className="w-6 h-6 text-green-400" />,

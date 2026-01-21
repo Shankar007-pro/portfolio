@@ -30,6 +30,7 @@ import {
   SiFirebase,
   SiVercel,
   SiVite,
+  Sisql,
 } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 import { BsFileEarmarkCode, BsGrid1X2 } from "react-icons/bs";
@@ -73,8 +74,8 @@ const SkillsSection = () => {
       title: "Programming Languages",
       color: "text-blue-400",
       skills: [
-        { name: "Python", icon: <BsFileEarmarkCode className="w-4 h-4 text-[#f89820]" /> },
-        { name: "SQL", icon: <SiPostgresql className="w-4 h-4 text-[#336791]" /> },
+        { name: "Python", icon: <FaPython className="w-4 h-4 text-[#f89820]" /> },
+        { name: "SQL", icon: <Sisql className="w-4 h-4 text-[#336791]" /> },
         { name: "Java", icon: <FaPython className="w-4 h-4 text-[#3776AB]" /> },
         { name: "HTML", icon: <BsFileEarmarkCode className="w-4 h-4 text-[#E34F26]" /> },
         { name: "CSS", icon: <BsFileEarmarkCode className="w-4 h-4 text-[#1572B6]" /> },

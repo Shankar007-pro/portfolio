@@ -39,7 +39,7 @@ export default function About() {
                 Hi, I’m <strong>Shankar Reddy</strong>, a passionate developer driven by the potential of Artificial Intelligence to solve complex real-world problems.
               </p>
               <p className="text-white">
-                My core expertise lies in <strong>Machine Learning</strong> and <strong>Natural Language Processing (NLP)</strong>. I enjoy working with large datasets to uncover trends and building intelligent applications using <strong>Generative AI</strong> and <strong>LLMs</strong>.
+                My core expertise lies in <strong>Artificial Intelligence</strong> and <strong>Machine Learning (ML)</strong>. I enjoy working with large datasets to uncover trends and building intelligent applications using <strong>Generative AI</strong>
               </p>
               <p className="text-white">
                 ✍️ Beyond the code, I am deeply interested in <strong>Public Health Tech</strong> and <strong>Agricultural AI</strong>, finding ways to use technology for social good.<br />
