@@ -11,13 +11,14 @@ import {
   FaPlane, 
   FaPenNib, 
   FaCameraRetro,
-  FaJava,       // Added for Java
+  FaJava,      
   FaPython,
   FaGitAlt,
   FaReact,
   FaNodeJs,
   FaLinux,
-  FaAws
+  FaAws,
+  FaFileExcel // ✅ Added this safe icon for Excel
 } from "react-icons/fa";
 import { MdLiveTv, MdSportsTennis, MdAnimation } from "react-icons/md";
 import { GiChessKnight } from "react-icons/gi";
@@ -34,13 +35,12 @@ import {
   SiFirebase,
   SiVercel,
   SiVite,
-  SiMysql,          // Fixed (was Sisql)
-  SiMicrosoftexcel, // Added for Excel
-  SiPandas,         // Added for Pandas
-  SiNumpy,          // Added for Numpy
-  SiJupyter,        // Added for Jupyter
-  SiScikitlearn,    // Added for ML
-  SiOpenai          // Added for GenAI (optional, fallback to FaBrain if not found)
+  SiMysql,
+  // SiMicrosoftexcel, ❌ Removed to fix build error
+  SiPandas,         
+  SiNumpy,          
+  SiJupyter,        
+  SiScikitlearn,    
 } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 import { BsFileEarmarkCode, BsGrid1X2 } from "react-icons/bs";
@@ -98,7 +98,7 @@ const SkillsSection = () => {
       skills: [
         { name: "GitHub", icon: <FaGitAlt className="w-4 h-4 text-[#F05032]" /> },
         { name: "VS Code", icon: <TbBrandVscode className="w-4 h-4 text-[#007ACC]" /> },
-        { name: "Excel", icon: <SiMicrosoftexcel className="w-4 h-4 text-[#217346]" /> },
+        { name: "Excel", icon: <FaFileExcel className="w-4 h-4 text-[#217346]" /> }, // ✅ Fixed Icon
         { name: "Jupyter Notebook", icon: <SiJupyter className="w-4 h-4 text-[#F37626]" /> },
       ],
     },
@@ -112,7 +112,7 @@ const SkillsSection = () => {
         { name: "Machine Learning", icon: <SiScikitlearn className="w-4 h-4 text-orange-500" /> },
         { name: "Pandas", icon: <SiPandas className="w-4 h-4 text-[#150458]" /> },
         { name: "Numpy", icon: <SiNumpy className="w-4 h-4 text-[#013243]" /> },
-        { name: "Matplotlib", icon: <BsGrid1X2 className="w-4 h-4 text-[#11557c]" /> }, // Generic grid icon for plots
+        { name: "Matplotlib", icon: <BsGrid1X2 className="w-4 h-4 text-[#11557c]" /> }, 
         { name: "Seaborn", icon: <BsGrid1X2 className="w-4 h-4 text-[#11557c]" /> },
       ],
     },
