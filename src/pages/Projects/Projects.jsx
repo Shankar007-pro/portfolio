@@ -19,7 +19,7 @@ const projects = [
     img: project2Img,
     color: "#d4cbd4ff",
     github: "https://github.com/Shankar007-pro/genai-health-assistant",
-    live: "",
+    live: "https://aarogya-ai-delta.vercel.app/",
   },
   
 
